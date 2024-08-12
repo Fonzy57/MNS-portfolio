@@ -52,9 +52,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   /* GO TO TOP IF USER CLICK ON TOP BUTTON */
   topButton.addEventListener("click", () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth"
-    });
+    if (topButton.classList.contains("visible")) {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    }
   });
 });
