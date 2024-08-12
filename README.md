@@ -7,10 +7,12 @@ Aucun framework ou librairies utilisés (sauf boxicons pour les icones).
 
 - Dans le dossier `js` vous trouverez les différents fichiers javascript.
 
-- Dans le dossier `styles` vous trouverez tous les fichiers CSS.  
-  Un fichier CSS app.css pour le style global de l'application et un fichier CSS par section pour maintenir plus facilement le projet.
+- Dans le dossier `pages` vous trouverez les différentes pages HTML du projet.
 
 - Dans le dossier `public` il y a les images et le cv au format PDF.
+
+- Dans le dossier `styles` vous trouverez tous les fichiers CSS.  
+  Un fichier CSS `app.css` pour le style global de l'application et un fichier CSS par section pour maintenir plus facilement le projet.
 
 ## Spécificités
 
