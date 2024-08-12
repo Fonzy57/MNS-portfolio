@@ -1,16 +1,16 @@
 # Portfolio Stéphane SCHEERES
 
 Portfolio fait uniquement avec HTML 5, CSS 3 et Javascript (vanilla).  
-Aucun framework ou librairie utilisés.
+Aucun framework ou librairies utilisées.
 
 ## Organisation des dossiers et fichiers :
 
-- Dans le dossier "js" vous y trouverez les différents fichiers javascript.
+- Dans le dossier `js` vous trouverez les différents fichiers javascript.
 
-- Dans le dossier "styles" vous y trouverez tous les fichiers CSS.
+- Dans le dossier `styles` vous y trouverez tous les fichiers CSS.  
   Un fichier CSS app.css pour le style global de l'application et un fichier CSS par section pour maintenir plus facilement le projet.
 
-- Dans le dossier "public" on y trouvera les images et le cv au format PDF
+- Dans le dossier `public` on y trouvera les images et le cv au format PDF.
 
 ## Spécificités
 
