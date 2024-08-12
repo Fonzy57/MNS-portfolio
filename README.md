@@ -1,6 +1,6 @@
 # Portfolio Stéphane SCHEERES
 
-Portfolio fait uniquement avec HTML 5, CSS 3 et Javascript (vanilla).  
+Portfolio fait uniquement avec **HTML 5**, **CSS 3** et **Javascript** _(vanilla)_.  
 Aucun framework ou librairies utilisées.
 
 ## Organisation des dossiers et fichiers :
