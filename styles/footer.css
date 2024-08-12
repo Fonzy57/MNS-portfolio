@@ -1,0 +1,99 @@
+footer {
+  background-color: var(--main);
+  padding: 20px 120px;
+  color: var(--white);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 15px;
+}
+
+#footer-logo-container {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+#footer-logo {
+  width: 100px;
+}
+
+#footer-logo-text {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 2px;
+  color: var(--white);
+  font-size: 30px;
+  font-weight: 600;
+}
+
+#footer-socials {
+  display: flex;
+  align-items: center;
+  column-gap: 40px;
+}
+
+.footer-social-logo {
+  display: block;
+  font-size: 40px;
+}
+
+.footer-social-logo:hover {
+  color: var(--main-light);
+}
+
+.footer-social-logo:active {
+  color: var(--main-bis);
+}
+
+#footer-copyright {
+  font-size: 12px;
+}
+
+#footer-slash {
+  display: inline;
+}
+
+#footer-break-line {
+  display: none;
+}
+
+/* --------------------------- */
+/* --- SMALL TABLET 768 px --- */
+/* --------------------------- */
+@media all and (min-width: 765px) and (max-width: 1015px) {
+  footer {
+    padding: 20px 0px;
+  }
+
+  #footer-logo {
+    width: 60px;
+  }
+
+  #footer-logo-text {
+    font-size: 24px;
+  }
+}
+
+/* --------------------- */
+/* --- MOBILE 275 px --- */
+/* --------------------- */
+@media all and (min-width: 270px) and (max-width: 765px) {
+  footer {
+    padding: 20px;
+  }
+
+  #footer-logo {
+    display: none;
+  }
+
+  #footer-logo-text {
+    font-size: 24px;
+  }
+
+  #footer-socials {
+    column-gap: 32px;
+  }
+
+  /* TODO FAIRE LE TEXTE COPYRIGHT RESPONSIVE AVEC DES SPAN */
+}

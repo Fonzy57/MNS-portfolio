@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="/public/images/logo-stephane-scheeres.svg">
+  <title>Portfolio - Stéphane SCHEERES</title>
+
+  <!-- GOOGLE FONTS POPPINS AND INTER-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+
+  <!-- BOXICONS LIBRARY -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/app.css">
+  <link rel="stylesheet" href="styles/nav.css">
+  <link rel="stylesheet" href="styles/footer.css">
+  <link rel="stylesheet" href="styles/intro.css">
+  <link rel="stylesheet" href="styles/skill.css">
+  <link rel="stylesheet" href="styles/career.css">
+  <link rel="stylesheet" href="styles/numbers.css">
+  <link rel="stylesheet" href="styles/projects.css">
+
+</head>
+
+<body>
+  <!-- NAVIGATION -->
+  <header id="header-nav" class="transition-all top">
+    <nav id="nav">
+      <a href="#" id="nav-logo">
+        <div id="nav-logo-container">
+          <img src="./public/images/logo-stephane-scheeres.svg" alt="Logo de Stéphane Scheeres">
+          <p id="nav-logo-text">Stéphane SCHEERES</p>
+        </div>
+      </a>
+      <ul id="nav-list">
+        <li class="nav-item">
+          <a href="#career-section" id="nav-link-career">Mon parcours</a>
+        </li>
+        <li class="nav-item">
+          <a href="#projects-section" id="nav-link-projects">Mes Projets</a>
+        </li>
+        <li class="nav-item">
+          <a href="/pages/contact.html">Contact</a>
+        </li>
+      </ul>
+      <div id="burger-menu">
+        <div class="burger-menu-line" id="burger-menu-line-top"></div>
+        <div class="burger-menu-line" id="burger-menu-line-middle"></div>
+        <div class="burger-menu-line" id="burger-menu-line-bottom"></div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="">
+    <!-- INTRO SECTION -->
+    <section id="intro-section">
+      <div id="intro-content">
+        <h1>Stéphane SCHEERES</h1>
+        <h2>Développeur Web</h2>
+        <p>Je donne vie à vos projets de développement grâce aux langages les plus innovants et les plus résilients du
+          web.</p>
+        <p>Actuellement passionné par l'idée d'explorer le back-end, je suis prêt à apporter mon dynamisme et mes
+          compétences à une équipe axée sur l'innovation.</p>
+        <a href="./pages/contact.html" class="button button-secondary transition-color" id="intro-button">
+          Prendre contact
+        </a>
+      </div>
+      <div id="intro-img"></div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills-section" class="banner-box-shadow">
+      <h2>Mes dommaines d'expertise</h2>
+      <div id="skills-section-container">
+        <div class="skill-logo-container">
+          <i class='bx bxl-html5 skill-logo'></i>
+          <p>HTML</p>
+        </div>
+        <div class="skill-logo-container">
+          <i class='bx bxl-css3 skill-logo'></i>
+          <p>CSS</p>
+        </div>
+        <div class="skill-logo-container">
+          <i class='bx bxl-typescript skill-logo'></i>
+          <p>Typescript</p>
+        </div>
+        <div class="skill-logo-container">
+          <i class='bx bxl-javascript skill-logo'></i>
+          <p>Javascript</p>
+        </div>
+        <div class="skill-logo-container">
+          <i class='bx bxl-tailwind-css skill-logo'></i>
+          <p>Tailwind CSS</p>
+        </div>
+        <div class="skill-logo-container">
+          <i class='bx bxl-react skill-logo'></i>
+          <p>React</p>
+        </div>
+        <div class="skill-logo-container">
+          <i class='bx bxl-git skill-logo'></i>
+          <p>Git</p>
+        </div>
+        <div class="skill-logo-container">
+          <i class='bx bxl-gitlab skill-logo'></i>
+          <p>GitLab</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CAREER SECTION -->
+    <section id="career-section">
+      <div id="career-content">
+        <h2>Parcours et compétences</h2>
+        <div id="career-text-container">
+          <div class="career-column-container">
+            <h3>Expériences Professionnelles</h3>
+            <div class="career-column">
+              <div class="career-item">
+                <h4>Ilium / Cruxpool</h4>
+                <div class="career-title-container">
+                  <div class="career-icon-text">
+                    <i class='bx bxs-right-arrow-alt career-icon'></i>
+                    <p class="career-title">
+                      Développeur Web
+                    </p>
+                  </div>
+                  <p class="career-date">2021 - 2024</p>
+                </div>
+                <!-- TODO PEUT ÊTRE METTRE AU SURVOL DE LA SOURIS UN TOOLTIP AVEC LA DESCRIPTION COMPLETE -->
+                <p class="career-description">
+                  Refonte du site et des dashboards de la pool de minage avec Next.JS, Typescript et Tailwind CSS. J'ai
+                  également créé le site de la société (Ilium) ainsi que le site pour le logiciel de minage (Pickminer)
+                  avec le framework Laravel.
+                </p>
+              </div>
+
+              <div class="career-item">
+                <h4>Doctegestio</h4>
+                <div class="career-title-container">
+                  <div class="career-icon-text">
+                    <i class='bx bxs-right-arrow-alt career-icon'></i>
+                    <p class="career-title">
+                      Stagiaire Dev Web
+                    </p>
+                  </div>
+                  <p class="career-date">2020</p>
+                </div>
+                <p class="career-description">
+                  J'ai mis en place un site Wordpress avec une personnalisation graphique à l'aide du plugin
+                  Elementor. J'ai également ajouté du CSS personnalisé afin de suivre la charte graphique fournie par le
+                  designer.
+                </p>
+              </div>
+
+              <div class="career-item">
+                <h4>Générale d'Optique</h4>
+                <div class="career-title-container">
+                  <div class="career-icon-text">
+                    <i class='bx bxs-right-arrow-alt career-icon'></i>
+                    <p class="career-title">
+                      Opticien collaborateur
+                    </p>
+                  </div>
+                  <p class="career-date">2012 - 2016</p>
+                </div>
+                <p class="career-description">
+                  Durant ces quatres années ma principale mission était de conseiller les clients afin de leurs proposer
+                  le meilleur équipement optique adaptés à leurs situations.
+                </p>
+              </div>
+
+            </div>
+          </div>
+          <div class="career-column-container">
+            <h3>Diplômes et certifications</h3>
+            <div class="career-column">
+              <div class="career-item">
+                <h4>Udemy</h4>
+                <div class="career-title-container">
+                  <div class="career-icon-text">
+                    <i class='bx bxs-right-arrow-alt career-icon'></i>
+                    <p class="career-title">
+                      Formation autodidacte
+                    </p>
+                  </div>
+                  <p class="career-date">2020 - 2021</p>
+                </div>
+                <p class="career-description">
+                  Je me suis formé sur plusieurs sujets comme l'algorithmie, Symfony, ainsi qu'une formation intitulée
+                  "Formation pour devenir Full-Stack". J'ai vu les parties Front-End et du Back-End.
+                </p>
+              </div>
+
+              <div class="career-item">
+                <h4>Simplon</h4>
+                <div class="career-title-container">
+                  <div class="career-icon-text">
+                    <i class='bx bxs-right-arrow-alt career-icon'></i>
+                    <p class="career-title">
+                      Formation Dev Web
+                    </p>
+                  </div>
+                  <p class="career-date">2020 - 2020</p>
+                </div>
+                <p class="career-description">
+                  Formation Développeur Web de 10 mois à la fin de laquelle j'ai effectué une présentation devant un
+                  jury de mon projet. Le projet était un système de prise de RDV pour un salon de coiffure. J'ai optenu
+                  suite à ma présenation un titre professionnel de niveau 5 équivalent à un BAC +2.
+                </p>
+              </div>
+
+              <div class="career-item">
+                <h4>Form-high-tech</h4>
+                <div class="career-title-container">
+                  <div class="career-icon-text">
+                    <i class='bx bxs-right-arrow-alt career-icon'></i>
+                    <p class="career-title">
+                      Initiation au web
+                    </p>
+                  </div>
+                  <p class="career-date">2018</p>
+                </div>
+                <p class="career-description">
+                  Obtention d'un certificat de compétences professionnelles Webmaster - Webdesigner
+                </p>
+              </div>
+
+              <div class="career-item">
+                <h4>IUT à Metz</h4>
+                <div class="career-title-container">
+                  <div class="career-icon-text">
+                    <i class='bx bxs-right-arrow-alt career-icon'></i>
+                    <p class="career-title">
+                      DUT TC
+                    </p>
+                  </div>
+                  <p class="career-date">2010 - 2011</p>
+                </div>
+                <p class="career-description">
+                  Obtention du DUT Techniques de Commercialisation en année spéciale (cursus en un an à la place de
+                  deux).
+                </p>
+              </div>
+
+              <div class="career-item">
+                <h4>ESOL à Nancy</h4>
+                <div class="career-title-container">
+                  <div class="career-icon-text">
+                    <i class='bx bxs-right-arrow-alt career-icon'></i>
+                    <p class="career-title">
+                      BTS Optique-Lunetterie
+                    </p>
+                  </div>
+                  <p class="career-date">2008 - 2010</p>
+                </div>
+                <p class="career-description">
+                  Obtention du BTS Optique-Lunetterie à l'Ecole Supérieur d'Optique de Lorraine.
+                </p>
+              </div>
+
+              <div class="career-item">
+                <h4>Lycée Cormontaigne</h4>
+                <div class="career-title-container">
+                  <div class="career-icon-text">
+                    <i class='bx bxs-right-arrow-alt career-icon'></i>
+                    <p class="career-title">
+                      BAC Scientifique
+                    </p>
+                  </div>
+                  <p class="career-date">2008</p>
+                </div>
+                <p class="career-description">
+                  Obtention du Bac Scientifique avec option physique chimie.
+                </p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="career-resume-container">
+        <div id="career-resume-img" class="box-shadow-soft">
+          <img src="/public/images/cv-stephane-scheeres.png" alt="Image du CV de Stéphane Scheeres" class="responsive">
+        </div>
+        <a href="/public/files/CV-stephane-scheeres.pdf" download="CV - Stéphane SCHEERES.pdf"
+          class="button button-secondary" id="career-button-container">
+          <div id="career-resume-button">
+            <p>
+              Télécharger <span class="mobile-hidden">mon</span> CV
+            </p>
+            <i class='bx bxs-download'></i>
+          </div>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- NUMBERS SECTION -->
+  <section id="numbers-section" class="banner-box-shadow">
+    <div id="numbers-section-container">
+      <div id="numbers-container">
+        <div class="number-item">
+          <div class="number-icon-container">
+            <i class='bx bx-code-alt test number-icon'></i>
+          </div>
+          <div class="number-content-container">
+            <p class="number-content">7.5K</p>
+            <p class="number-text">Lignes de code</p>
+          </div>
+        </div>
+        <div class="number-item">
+          <div class="number-icon-container">
+            <i class='bx bxs-rocket number-icon'></i>
+          </div>
+          <div class="number-content-container">
+            <p class="number-content">8</p>
+            <p class="number-text">Projets propulsés</p>
+          </div>
+        </div>
+        <div class="number-item">
+          <div class="number-icon-container">
+            <i class='bx bxs-window-alt number-icon'></i>
+          </div>
+          <div class="number-content-container">
+            <p class="number-content">5</p>
+            <p class="number-text">Sites en ligne</p>
+          </div>
+        </div>
+      </div>
+      <div id="numbers-button-container">
+        <a href="https://github.com/Fonzy57" target="_blank" rel="noopener noreferrer"
+          class="button button-primary width-full">
+          <div id="numbers-button">
+            <p>Voir mon github</p>
+            <i class='bx bxl-github'></i>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section id="projects-section">
+    <h2>Mes projets</h2>
+    <div id="projects-card-container">
+
+      <div class="projects-card transition-all">
+        <div class="projects-card-img">
+          <img src="/public/images/projects/cruxpool.png" alt="Ilium photo" class="responsive">
+        </div>
+        <p class="projects-card-title">CRUXPOOL</p>
+        <p class="projects-card-description">Réalisation d’un site pour Cruxpool (site d'une pool de minage), avec un
+          espace utilisateur. <br /> Ce site a
+          été fait avec Next.js et Typescript</p>
+        <div class="projects-card-button-container">
+          <a href="https://cruxpool.com/" target="_blank" rel="noopener noreferrer" class="button button-primary">
+            Voir le projet
+          </a>
+        </div>
+      </div>
+
+      <div class="projects-card transition-all">
+        <div class="projects-card-img">
+          <img src="/public/images/projects/ilium.png" alt="Ilium photo" class="responsive">
+        </div>
+        <p class="projects-card-title">ILIUM</p>
+        <p class="projects-card-description">Réalisation d’un site multi-page pour ILIUM, entreprise spécialisée dans la
+          blockchain et le minage de crypto-monnaie </p>
+        <div class="projects-card-button-container">
+          <a href="https://ilium.co/" target="_blank" rel="noopener noreferrer" class="button button-primary">
+            Voir le projet
+          </a>
+        </div>
+      </div>
+
+      <div class="projects-card transition-all">
+        <div class="projects-card-img">
+          <img src="/public/images/projects/pickminer.png" alt="Ilium photo" class="responsive">
+        </div>
+        <p class="projects-card-title">PICKMINER</p>
+        <p class="projects-card-description">Réalisation d’un site multi-page pour Pickminer (logiciel de minage de
+          crypto-monnaie) avec le framework Laravel.</p>
+        <div class="projects-card-button-container">
+          <a href="https://www.pickminer.com/" target="_blank" rel="noopener noreferrer" class="button button-primary">
+            Voir le projet
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div id="footer-logo-container">
+      <img src="./public/images/logo-stephane-scheeres.svg" alt="Logo de Stéphane Scheeres" id="footer-logo"
+        class="responsive">
+      <p id="footer-logo-text">Stéphane SCHEERES</p>
+    </div>
+    <div id="footer-socials">
+      <a href="https://github.com/Fonzy57" target="_blank" rel="noopener noreferrer"
+        class="footer-social-logo transition-color">
+        <i class='bx bxl-github'></i>
+      </a>
+      <a href="https://www.linkedin.com/in/stephane-scheeres/" target="_blank" rel="noopener noreferrer"
+        class="footer-social-logo transition-color">
+        <i class='bx bxl-linkedin-square'></i>
+      </a>
+    </div>
+    <div id="footer-copyright">
+      <p>© Tous droits réservés - <span id="footer-year"></span> | v<span id="footer-version"></span></p>
+    </div>
+  </footer>
+
+  <!-- JS SCRIPTS -->
+  <script src="/js/footer.js"></script>
+  <script src="/js/nav.js"></script>
+  <script src="/js/nav-mobile.js"></script>
+</body>
+
+</html>

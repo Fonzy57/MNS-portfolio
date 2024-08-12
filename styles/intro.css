@@ -1,0 +1,225 @@
+#intro-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 200px;
+  padding-top: 160px;
+  padding-bottom: 105px;
+}
+
+#intro-content {
+  width: 800px;
+  height: 415px;
+  text-align: center;
+  background-image: url("../public/images/intro-bg.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#intro-content h1 {
+  color: var(--main);
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#intro-content h2 {
+  color: var(--main-bis);
+  font-size: 32px;
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+#intro-content p {
+  width: 480px;
+  margin: 0px auto;
+  font-size: 18px;
+  color: var(--black);
+}
+
+#intro-content p:first-of-type {
+  margin-top: 26px;
+  margin-bottom: 14px;
+}
+
+#intro-button {
+  margin-top: 40px;
+}
+
+#intro-img {
+  background-image: url("../public/images/stephane-scheeres-portrait.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border-radius: 50%;
+  width: 400px;
+  height: 400px;
+  transition: box-shadow 0.3s ease-out;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0px 0px 30px 0.5px var(--main);
+  }
+
+  50% {
+    box-shadow: 0px 0px 30px 0.5px var(--main-bis);
+  }
+
+  100% {
+    box-shadow: 0px 0px 30px 0.5px var(--main);
+  }
+}
+
+/* ---------------------- */
+/* --- LAPTOP 1440 px --- */
+/* ---------------------- */
+@media all and (min-width: 1435px) and (max-width: 1915px) {
+  #intro-section {
+    column-gap: 100px;
+    padding: 190px 0px 130px 0px;
+  }
+
+  #intro-content {
+    width: 700px;
+  }
+
+  #intro-img {
+    width: 350px;
+    height: 350px;
+  }
+}
+
+/* ---------------------- */
+/* --- TABLET 1024 px --- */
+/* ---------------------- */
+@media all and (min-width: 1015px) and (max-width: 1435px) {
+  #intro-section {
+    column-gap: 150px;
+    /* TODO VOIR PADDING B */
+    padding-bottom: 105px;
+  }
+
+  #intro-content {
+    width: 405px;
+
+    background-image: none;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #intro-content h1 {
+    font-size: 32px;
+  }
+
+  #intro-content h2 {
+    font-size: 28px;
+  }
+
+  #intro-content p {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  #intro-content p:first-of-type {
+    margin-top: 20px;
+  }
+
+  #intro-button {
+    margin-top: 32px;
+  }
+
+  #intro-img {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+/* --------------------------- */
+/* --- SMALL TABLET 768 px --- */
+/* --------------------------- */
+@media all and (min-width: 765px) and (max-width: 1015px) {
+  #intro-section {
+    flex-direction: column;
+    row-gap: 40px;
+    padding-top: 120px;
+    padding-bottom: 80px;
+  }
+
+  #intro-content {
+    width: 700px;
+  }
+
+  #intro-content h1 {
+    font-size: 32px;
+  }
+
+  #intro-content h2 {
+    font-size: 24px;
+  }
+
+  #intro-content p {
+    margin: 0px auto;
+    font-size: 16px;
+  }
+
+  #intro-img {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+/* --------------------- */
+/* --- MOBILE 275 px --- */
+/* --------------------- */
+@media all and (min-width: 270px) and (max-width: 765px) {
+  #intro-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+
+    padding: 120px 10px 80px 10px;
+  }
+
+  #intro-content {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    background-image: none;
+  }
+
+  #intro-content h1 {
+    font-size: 32px;
+  }
+
+  #intro-content h2 {
+    font-size: 20px;
+    margin-top: 16px;
+  }
+
+  #intro-content p {
+    width: 100%;
+    margin: 0px auto;
+    font-size: 16px;
+    color: var(--black);
+  }
+
+  #intro-content p:first-of-type {
+    margin-top: 24px;
+  }
+
+  #intro-img {
+    display: none;
+  }
+}

@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* line-height: inherit;
+  color: inherit;
+  font: inherit; */
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: normal;
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+:root {
+  --main: #193256;
+  --main-bis: #215aa7;
+  --main-light: #c7e3f8;
+  --secondary: #f2be2a;
+  --secondary-bis: #efd670;
+  --secondary-light: #e1d6a8;
+  --black: #1d1d1d;
+  --white: #fff;
+  --success: #019a4a;
+  --warning: #ff9900;
+  --error: #ff0000;
+  --disabled: #f5f5f5;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* --- TRANSITIONS --- */
+.transition-color {
+  transition: background-color 0.3s ease-out;
+}
+
+.transition-all {
+  transition: all 0.3s ease-out;
+}
+
+/* --- BOX SHADOWS --- */
+.box-shadow-soft {
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.box-shadow-header {
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.2),
+    0 8px 10px -6px rgb(0 0 0 / 0.2);
+}
+
+.banner-box-shadow {
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+    0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+/* --- BUTTON STYLE --- */
+.button {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 1px;
+  color: var(--white);
+  font-weight: 600;
+  display: block;
+  padding: 10px 18px;
+  width: max-content;
+  margin: 0px auto;
+  border-radius: 8px;
+  transition: all 0.3s ease-out;
+  font-size: 20px;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+/* --- PRIMARY BUTTON --- */
+.button-primary {
+  background-color: var(--main);
+}
+
+.button-primary:hover {
+  background-color: var(--main-bis);
+}
+
+.button-primary:active {
+  background-color: var(--main-bis);
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1),
+    0 0 0 2px var(--main);
+}
+
+/* --- PRIMARY LIGHT BUTTON --- */
+.button-primary-light {
+  background-color: var(--main);
+}
+
+.button-primary-light:hover {
+  background-color: var(--main-bis);
+}
+
+.button-primary-light:active {
+  background-color: var(--main-bis);
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1),
+    0 0 0 2px var(--main);
+}
+
+/* --- SECONDARY BUTTON --- */
+.button-secondary {
+  background-color: var(--secondary);
+}
+
+.button-secondary:hover {
+  background-color: var(--secondary-bis);
+}
+
+.button-secondary:active {
+  background-color: var(--secondary);
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1),
+    0 0 0 2px var(--secondary-light);
+}
+
+.width-full {
+  width: 100%;
+}
+
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
+.error-text {
+  color: var(--error);
+}
+
+.spin {
+  animation-name: spin;
+  animation-duration: 2000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.mobile-hidden {
+  display: none;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ---------------------- */
+/* --- LAPTOP 1440 px --- */
+/* ---------------------- */
+@media all and (min-width: 1435px) and (max-width: 1915px) {
+}
+
+/* ---------------------- */
+/* --- TABLET 1024 px --- */
+/* ---------------------- */
+@media all and (min-width: 1015px) and (max-width: 1435px) {
+}
+
+/* --------------------------- */
+/* --- SMALL TABLET 768 px --- */
+/* --------------------------- */
+@media all and (min-width: 765px) and (max-width: 1015px) {
+}
+
+/* --------------------- */
+/* --- MOBILE 275 px --- */
+/* --------------------- */
+@media all and (min-width: 270px) and (max-width: 765px) {
+}
+
+/* TODO FAIRE LE STYLE EN MOBILE FIRST */
+
+/* TODO FAIRE UNE CLASSE POUR LES TRANSITIONS */
+
+/* TODO FAIRE UN FAKE LOADER SUR LA PAGE ET QUAND CHANGEMENT DE PAGE */
+
+/* TODO ICI CODE POUR FAIRE DU TEXTE SCALABLE ET INCLUSIF */
+/*
+html {
+   font-size: 100%;  16px par défaut 
+  }
+
+  body {
+     font-size: 0.75em;  12px
+  }
+  
+  h1 {
+     font-size: 2em;  24px 
+  }
+*/
+
+/* POUR NE PAS AFFICHER UN CONTENU MAIS LE LAISSER VISIBLE AUX OUTILS D'ACCESSIBILITE
+  .visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  }
+*/

@@ -1,0 +1,108 @@
+#skills-section {
+  background-color: var(--main-bis);
+  color: var(--white);
+  padding: 40px 120px;
+}
+
+#skills-section h2 {
+  font-size: 32px;
+  letter-spacing: 4px;
+  font-weight: 700;
+  text-align: center;
+}
+
+#skills-section-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.skill-logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 5px;
+}
+
+/* TODO VOIR SI JE FAIS UNE ANIMATION AU HOVER */
+.skill-logo {
+  font-size: 100px;
+}
+
+.skill-logo-container p {
+  font-weight: 500;
+}
+
+/* ---------------------- */
+/* --- TABLET 1024 px --- */
+/* ---------------------- */
+@media all and (min-width: 1015px) and (max-width: 1435px) {
+  #skills-section {
+    padding: 40px 15px;
+  }
+}
+
+/* --------------------------- */
+/* --- SMALL TABLET 768 px --- */
+/* --------------------------- */
+@media all and (min-width: 765px) and (max-width: 1015px) {
+  #skills-section {
+    background-color: var(--main-bis);
+    color: var(--white);
+    padding: 40px 30px;
+  }
+
+  #skills-section h2 {
+    font-size: 28px;
+  }
+
+  #skills-section-container {
+    flex-wrap: wrap;
+    margin-top: 40px;
+    row-gap: 26px;
+  }
+
+  .skill-logo-container {
+    width: 150px;
+  }
+}
+
+/* --------------------- */
+/* --- MOBILE 275 px --- */
+/* --------------------- */
+@media all and (min-width: 270px) and (max-width: 765px) {
+  #skills-section {
+    padding: 40px 10px;
+  }
+
+  #skills-section h2 {
+    font-size: 20px;
+  }
+
+  #skills-section-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    gap: 26px;
+  }
+
+  .skill-logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 5px;
+
+    width: 100px;
+  }
+
+  .skill-logo {
+    font-size: 90px;
+  }
+
+  .skill-logo-container p {
+    font-weight: 500;
+  }
+}
