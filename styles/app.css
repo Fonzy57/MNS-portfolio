@@ -212,6 +212,8 @@ a {
   }
 }
 
+/* SCROLL BAR STYLE */
+/* WORKS ON CHROME BUT NOT FIREFOX */
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
