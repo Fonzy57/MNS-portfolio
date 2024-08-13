@@ -34,29 +34,4 @@ document.addEventListener("DOMContentLoaded", () => {
   showElement();
   window.addEventListener("scroll", showElement);
   window.addEventListener("resize", showElement);
-
-  /* TOP BUTTON */
-  const toggleTopButton = () => {
-    if (window.scrollY > 750) {
-      topButton.classList.add("visible");
-    } else {
-      topButton.classList.remove("visible");
-    }
-  };
-
-  /* CHECK POSITION FROM USER WHEN PAGE IS LOADED */
-  toggleTopButton();
-
-  /* SHOW BUTTON WHEN USER SCROLL IN THE PAGE */
-  window.addEventListener("scroll", toggleTopButton);
-
-  /* GO TO TOP IF USER CLICK ON TOP BUTTON */
-  topButton.addEventListener("click", () => {
-    if (topButton.classList.contains("visible")) {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-      });
-    }
-  });
 });
