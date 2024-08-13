@@ -16,7 +16,7 @@ const messageError = document.getElementById("message-error");
 
 /* CONSTANTS */
 const nameMaxLength = 30;
-const messageMaxLength = 20; /* TODO CHANGE THE VALUE TO CHANGE MESSAGE MAX LENGTH AUTHORIZED */
+const messageMaxLength = 200; // CHANGE THE VALUE TO CHANGE MESSAGE MAX LENGTH AUTHORIZED
 const nameErrorMessage = "Veuillez renseigner votre nom";
 const nameErrorLengthMessage = `Le nom ne peut pas dépasser ${nameMaxLength} caractères`;
 const emailErrorEmptyMessage = "Veuillez renseigner votre email";
@@ -50,11 +50,19 @@ const mailData = {
   message: "",
 };
 
+/* REINITIALIZE BUTTON */
+const reinitializeButton = () => {
+  buttonIcon.classList.add("bx-paper-plane");
+  buttonIcon.classList.remove("bx-check");
+  buttonText.textContent = "Envoyer";
+};
+
 /* GET NAME INPUT VALUE */
 nameInput.addEventListener("input", () => {
   nameInput.classList.remove("input-error");
   formButton.removeAttribute("disabled");
   nameError.style.display = "none";
+  reinitializeButton();
   const value = nameInput.value;
   mailData.name = sanitizeInput(value);
 });
@@ -64,6 +72,7 @@ emailInput.addEventListener("input", () => {
   emailInput.classList.remove("input-error");
   formButton.removeAttribute("disabled");
   emailError.style.display = "none";
+  reinitializeButton();
   const value = emailInput.value;
   mailData.email = sanitizeInput(value);
 
@@ -74,6 +83,7 @@ messageInput.addEventListener("input", () => {
   messageInput.classList.remove("input-error");
   formButton.removeAttribute("disabled");
   messageError.style.display = "none";
+  reinitializeButton();
   const value = messageInput.value;
   mailData.message = sanitizeInput(value);
   updateCharCount();
@@ -169,6 +179,8 @@ const sendMail = (formIsValid) => {
       buttonIcon.classList.remove("spin");
       buttonText.textContent = "Message envoyé";
       console.log("Message envoyé avec ces données : ");
+
+      /* SEE THE INFOS IN THE CONSOLE */
       console.log("Form Data:", mailData);
 
       /* TODO OUVRIR UNE NOUVELLE PAGE AVEC UN EXEMPLE D'HTML POUR FAKE MAIL EN RECUPERANT LES DONNEES */
