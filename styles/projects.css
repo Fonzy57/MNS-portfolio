@@ -14,12 +14,14 @@
   display: flex;
   align-items: stretch;
   justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 32px;
   margin-top: 32px;
 }
 
 .projects-card {
   padding: 16px 16px 26px 16px;
-  width: 430px;
+  width: 350px;
   cursor: default;
   border: 1px solid transparent;
   border-radius: 10px;
@@ -73,7 +75,7 @@
   }
 
   .projects-card {
-    width: 380px;
+    width: 350px;
   }
 }
 
@@ -84,7 +86,7 @@
   #projects-section {
     padding: 100px 40px;
     margin: 0px auto;
-    width: 100%;
+    width: 944px;
   }
 
   #projects-section h2 {
@@ -93,7 +95,7 @@
 
   #projects-card-container {
     margin-top: 44px;
-    justify-content: flex-start;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 32px;
   }
