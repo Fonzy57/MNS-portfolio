@@ -183,7 +183,6 @@ const sendMail = (formIsValid) => {
       /* SEE THE INFOS IN THE CONSOLE */
       console.log("Form Data:", mailData);
 
-      /* TODO OUVRIR UNE NOUVELLE PAGE AVEC UN EXEMPLE D'HTML POUR FAKE MAIL EN RECUPERANT LES DONNEES */
     }, 3000);
   }
 };
