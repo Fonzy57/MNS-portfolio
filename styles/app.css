@@ -167,7 +167,6 @@ a {
   align-items: center;
   justify-content: center;
   background-color: var(--main);
-  cursor: pointer;
   position: fixed;
   bottom: 100px;
   right: 50px;
@@ -183,6 +182,7 @@ a {
 
 #top-button.visible {
   opacity: 1;
+  cursor: pointer;
 }
 
 #top-button i {
