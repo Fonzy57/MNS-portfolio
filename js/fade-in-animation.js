@@ -1,7 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-  /* ELEMENTS */
-  const topButton = document.getElementById("top-button");
-
   /* FUNCTION TO SEE IF ELEMENT IS IN VIEWPORT */
   const isElementInViewport = (element) => {
     const rect = element.getBoundingClientRect();
