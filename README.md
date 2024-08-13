@@ -3,6 +3,8 @@
 Portfolio fait uniquement avec **HTML 5**, **CSS 3** et **Javascript** _(vanilla)_.  
 Aucun framework ou librairies utilisés (sauf boxicons pour les icones).
 
+Les projets de la section `projects` de la page d'acceuil, sont ceux que j'ai fait durant mon emploi chez Ilium en tant que développeur web (pendant 3 ans).
+
 ## Organisation des dossiers et fichiers :
 
 - Dans le dossier `js` vous trouverez les différents fichiers javascript.
