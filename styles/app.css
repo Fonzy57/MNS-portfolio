@@ -2,9 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* line-height: inherit;
-  color: inherit;
-  font: inherit; */
 }
 
 body {
@@ -215,32 +212,23 @@ a {
   }
 }
 
-/* TODO FAIRE UN FAKE LOADER SUR LA PAGE ET QUAND CHANGEMENT DE PAGE */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
 
-/* TODO ICI CODE POUR FAIRE DU TEXTE SCALABLE ET INCLUSIF */
-/*
-html {
-   font-size: 100%;  16px par défaut 
-  }
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--main-light);
+}
 
-  body {
-     font-size: 0.75em;  12px
-  }
-  
-  h1 {
-     font-size: 2em;  24px 
-  }
-*/
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(33, 90, 167, 0.8);
+  border-radius: 4px;
+}
 
-/* POUR NE PAS AFFICHER UN CONTENU MAIS LE LAISSER VISIBLE AUX OUTILS D'ACCESSIBILITE
-  .visuallyhidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-  }
-*/
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(25, 50, 86, 0.8);
+}
