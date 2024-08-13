@@ -16,10 +16,9 @@ Aucun framework ou librairies utilisés (sauf boxicons pour les icones).
 
 ## Spécificités
 
-- J'ai omis volontairement les `required` en HTML pour mon formulaire afin de faire les vérifications des inputs en Javascript.
-- Dans le fichier `form.js` il y a un timeout qui a été ajouté pour simuler l'envoie du message avec le formulaire de contact.
-
-<!--
-  TODO CHANGER LA SCROLL BAR
-  TODO FAIRE ANIMATION SUR LES CHIFFRES DE LA BANNER
- -->
+- Sur mon CV (fichier PDF), j'ai volontairement enlevé mon adresse et mon numéro de téléphone comme le repo github est public.
+- Pour le formulaire :
+  - J'ai omis volontairement les `required` en HTML afin de faire les vérifications des inputs en Javascript
+  - L'input email à `type="text"` à la place de `type="email"`, car je fais la vérification en javascript à l'aide d'une regex, changement volontaire de ma part
+  - Dans le fichier `form.js` il y a un timeout qui a été ajouté pour simuler l'envoie du message
+  - Pour voir les informations récupérées des inputs (s'il n'y a pas d'erreurs dans le formulaire et que le message a bien été envoyé), ouvrir la console du navigateur.
