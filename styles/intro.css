@@ -102,7 +102,6 @@
 @media all and (min-width: 1015px) and (max-width: 1435px) {
   #intro-section {
     column-gap: 150px;
-    /* TODO VOIR PADDING B */
     padding-bottom: 105px;
   }
 
